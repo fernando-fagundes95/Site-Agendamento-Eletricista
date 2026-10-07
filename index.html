@@ -6,348 +6,420 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Site novo</title>
 
-    <!-- Estilos e Scripts do Calendário Moderno (FullCalendar) - CORRIGIDO -->
-    <link href="https://jsdelivr.net" rel="stylesheet" />
-    <script src="https://jsdelivr.net"></script>
-    <script src="https://jsdelivr.net"></script>
-
     <!-- Fontes do Google - CORRIGIDO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- Seus Estilos Locais e Ícones - CORRIGIDO -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 
-
 <body>
 
-        <header class="topo-site">
-            <div class="container">
-                <h1>Nao perca <samp class="cor"> tempo</samp> e nem <samp class="cor">dinheiro, <br></samp> contrate
-                    quem
-                    entende do assunto! <br></h1>
-                <p>Serviço com excelencia e profissionalismo <br> a um preço acessivel.</p>
-                <button class="botao" onclick="window.location.href='http://localhost/eletricista/index.php'">
-                    Faça seu Agendamento
-                </button>
-            </div>
-        </header>
+    <header class="topo-site">
+        <div class="container">
+            <h1>Nao perca <samp class="cor"> tempo</samp> e nem <samp class="cor">dinheiro, <br></samp> contrate
+                quem
+                entende do assunto! <br></h1>
+            <p>Serviço com excelencia e profissionalismo <br> a um preço acessivel.</p>
+            <button class="botao" onclick="window.location.href='http://localhost/eletricista/index.php'">
+                Faça seu Agendamento
+            </button>
+        </div>
+    </header>
 
-        <!--Secao numero 1 -->
-        <section class="secao-1">
-            <div class="gred1">
-                <h2>Vc sabia que sua familia corre <br>serios riscos de vida com uma <br>instalação antiga ou <br>mal
-                    feita?
-                </h2>
-                <p>Mais do que garantir o fornecimento de energia,
-                    os eletricistas <br> desempenham um papel essencial na segurança elétrica. <br>
-                    A eletricidade, apesar de ser indispensável para a vida moderna, <br> também pode representar
-                    grandes
-                    riscos se não for manuseada <br>corretamente. Por isso, é vital contar com profissionais capacitados
-                    <br> que saibam lidar com essas instalações e proteger as pessoas de <br> potenciais acidentes.
+    <!--Secao numero 1 -->
+    <section class="secao-1">
+        <div class="gred1">
+            <h2>Vc sabia que sua familia corre <br>serios riscos de vida com uma <br>instalação antiga ou <br>mal
+                feita?
+            </h2>
+            <p>Mais do que garantir o fornecimento de energia,
+                os eletricistas <br> desempenham um papel essencial na segurança elétrica. <br>
+                A eletricidade, apesar de ser indispensável para a vida moderna, <br> também pode representar
+                grandes
+                riscos se não for manuseada <br>corretamente. Por isso, é vital contar com profissionais capacitados
+                <br> que saibam lidar com essas instalações e proteger as pessoas de <br> potenciais acidentes.
 
-                </p>
-            </div>
+            </p>
+        </div>
 
-            <img class="img-secao-1" src="https://i.pinimg.com/736x/66/9f/be/669fbec19b45a50e7d478c0c4be461b2.jpg"
-                alt="">
+        <img class="img-secao-1" src="https://i.pinimg.com/736x/66/9f/be/669fbec19b45a50e7d478c0c4be461b2.jpg" alt="">
 
-        </section>
+    </section>
 
-        <!--Fim da secao numero 1 -->
+    <!--Fim da secao numero 1 -->
 
-        <!--Inicio da secao 2-->
-
-
-        <section class="secao-2">
-            <div class="container"> <img src=" https://img.ws.mms.shopee.com.br/1dd1828b4846b1f6380f94187f456bb6"
-                    alt="">
-            </div>
-        </section>
-        <!--Fim da secao 2-->
-
-        <!--Inicio da secao 3-->
-        <!-- SEÇÃO DE AGENDAMENTO ISOLADA -->
-        <section
-            style="width: 100%; padding: 60px 0; display: flex; justify-content: center; align-items: center; background-color: transparent; clear: both; float: none; position: relative; z-index: 9999;">
-
-            <div
-                style="background: #ffffff !important; max-width: 500px !important; width: 100% !important; padding: 40px !important; border-radius: 8px !important; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; box-sizing: border-box !important; font-family: sans-serif !important;">
-                <h2
-                    style="color: #333333 !important; font-size: 24px !important; margin-top: 0 !important; margin-bottom: 25px !important; text-align: center !important;">
-                    Agendar Eletricista ⚡</h2>
-
-                <form action="../eletricista/salvar_agendamento.php" method="POST">
-                    <div style="text-align: left !important; margin-bottom: 15px !important;">
-                        <label
-                            style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Nome
-                            Completo:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required
-                            style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
-                    </div>
-
-                    <div style="text-align: left !important; margin-bottom: 15px !important;">
-                        <label
-                            style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">WhatsApp
-                            / Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required
-                            style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
-                    </div>
-
-                    <div style="text-align: left !important; margin-bottom: 15px !important;">
-                        <label
-                            style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Data
-                            do Servico:</label>
-                        <input type="date" id="data" name="data" required
-                            style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
-                    </div>
-
-                    <div style="text-align: left !important; margin-bottom: 15px !important;">
-                        <label
-                            style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Horário:</label>
-                        <input type="time" id="hora" name="hora" required
-                            style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
-                    </div>
-
-                    <div style="text-align: left !important; margin-bottom: 15px !important;">
-                        <label
-                            style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Descrição
-                            do Problema:</label>
-                        <textarea id="problema" name="problema"
-                            placeholder="Ex: Chuveiro não esquenta, tomada queimada..." rows="4" required
-                            style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important; resize: vertical !important;"></textarea>
-                    </div>
-
-                    <button type="submit"
-                        style="width: 100% !important; padding: 14px !important; background-color: #f3c21b !important; color: #333333 !important; border: none !important; border-radius: 4px !important; font-size: 16px !important; font-weight: bold !important; cursor: pointer !important; margin-top: 15px !important;">Confirmar
-                        Agendamento</button>
-                </form>
-            </div>
-        </section>
+    <!--Inicio da secao 2-->
 
 
+    <section class="secao-2">
+        <div class="container"> <img src=" https://img.ws.mms.shopee.com.br/1dd1828b4846b1f6380f94187f456bb6" alt="">
+        </div>
+    </section>
+    <!--Fim da secao 2-->
 
-        <section class="secao-3">
-            <div class="container">
+    <!--Inicio da secao 3-->
+    <!-- SEÇÃO DE AGENDAMENTO ISOLADA -->
+    <section
+        style="width: 100%; padding: 60px 0; display: flex; justify-content: center; align-items: center; background-color: transparent; clear: both; float: none; position: relative; z-index: 9999;">
 
-                <h2> <samp class="cor-h2-secao-3"> O foco é </samp>solucionar o seu problema. </h2>
+        <div
+            style="background: #ffffff !important; max-width: 500px !important; width: 100% !important; padding: 40px !important; border-radius: 8px !important; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important; box-sizing: border-box !important; font-family: sans-serif !important;">
+            <h2
+                style="color: #333333 !important; font-size: 24px !important; margin-top: 0 !important; margin-bottom: 25px !important; text-align: center !important;">
+                Agendar Eletricista ⚡</h2>
 
-                <ul class="servicos">
-
-                    <li class="card-servico">
-                        <div class="icone">⚡</div>
-                        <h3> <samp class="cor3"> Instalação</samp> Elétrica</h3>
-                        <p>
-                            Instalações elétricas com segurança,
-                            qualidade e profissionalismo.
-                        </p>
-                    </li>
-
-                    <li class="card-servico">
-                        <div class="icone">🔧</div>
-                        <h3> <samp class="cor3"> Manutenção</samp> Elétrica</h3>
-                        <p>
-                            Manutenção e correção de problemas
-                            elétricos em sua residência ou empresa.
-                        </p>
-                    </li>
-
-                    <li class="card-servico">
-                        <div class="icone">💡</div>
-                        <h3> <samp class="cor3">Projeto</samp> Elétrico</h3>
-                        <p>
-                            Projetos elétricos planejados para
-                            garantir eficiência e segurança.
-                        </p>
-                    </li>
-
-                </ul>
-
-            </div>
-        </section>
-        <!--Fim da secao 3-->
-
-        <!--começo da secao4 -->
-        <section class="vantagens">
-            <div class="container">
-                <h2> <samp class="cor-h2-vantagens">Facilidades</samp> para você
-                </h2>
-                <ul class="lista-vantagens">
-                    <li>
-                        <div class="icone">💰</div>
-                        <h3>Desconto à vista</h3>
-                        <p>Tenha desconto especial pagando à vista.</p>
-                        <hr>
-                    </li>
-
-                    <li>
-                        <div class="icone">⏱️</div>
-                        <h3>Orçamento em até 4h</h3>
-                        <p>Solicite seu orçamento e receba o retorno em até 4 horas.</p>
-                        <hr>
-                    </li>
-
-                    <li>
-                        <div class="icone">🚨</div>
-                        <h3>Atendimento 24h</h3>
-                        <p>Atendimento disponível todos os dias, 24 horas.</p>
-                        <hr>
-                    </li>
-
-                    <li>
-                        <div class="icone">💳</div>
-                        <h3>Pague em até 5x</h3>
-                        <p>Facilidade para pagar seu serviço em até 5 parcelas.</p>
-                        <hr>
-                    </li>
-
-                </ul>
-
-                <a href="http://localhost/eletricista/index.php" style="text-decoration: none;">
-                    <button class="botao2">Fazer orçamento agora</button>
-                </a>
-
-            </div>
-        </section>
-        <!--Fim da secao 4-->
-        <!-- Botão de Voltar ao Topo -->
-        <a href="#" class="botao-topo">▲</a>
-
-        <!--começo da secao 5-->
-
-        <section class="secao-5">
-            <div class="container">
-                <h2> <samp class="cor2-h2-secao-5">Minha </samp>Localização</h2>
-            </div>
-
-            <iframe class="mapa"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.393679737358!2d-51.18286082531962!3d-23.265140879004463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb5acd2443bcb7%3A0x4d2f1366ca6be320!2sR.%20Augusto%20Massaretto%20-%20Londrina%2C%20PR%2C%2086081-176!5e0!3m2!1spt-BR!2sbr!4v1789874296225!5m2!1spt-BR!2sbr"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </section>
-
-
-        <!--final da secao 5-->
-
-        <!--começo da secao 6-->
-        <section class="secao6">
-            <div class="container">
-                <div class="cta2 grid-8">
-                    <h2> <samp class="cor-h2-secao6">Formas </samp>de Pagamento</h2>
-                    <p class="forma-pagamento">Escolha a opção que preferir para concluir suas compra.</p>
-                    <ul class="pagamentos">
-                        <li>Cartão de crédito</li>
-                        <li>Boleto</li>
-                        <li>Pix</li>
-                    </ul>
-
+            <form action="../eletricista/salvar_agendamento.php" method="POST">
+                <div style="text-align: left !important; margin-bottom: 15px !important;">
+                    <label
+                        style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Nome
+                        Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required
+                        style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
                 </div>
+
+                <div style="text-align: left !important; margin-bottom: 15px !important;">
+                    <label
+                        style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">WhatsApp
+                        / Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required
+                        style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
+                </div>
+
+                <div style="text-align: left !important; margin-bottom: 15px !important;">
+                    <label
+                        style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Data
+                        do Servico:</label>
+                    <input type="date" id="data" name="data" required
+                        style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
+                </div>
+
+                <div style="text-align: left !important; margin-bottom: 15px !important;">
+                    <label
+                        style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Horário:</label>
+                    <input type="time" id="hora" name="hora" required
+                        style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important;">
+                </div>
+
+                <div style="text-align: left !important; margin-bottom: 15px !important;">
+                    <label
+                        style="display: block !important; font-size: 14px !important; color: #333333 !important; font-weight: bold !important; margin-bottom: 5px !important;">Descrição
+                        do Problema:</label>
+                    <textarea id="problema" name="problema" placeholder="Ex: Chuveiro não esquenta, tomada queimada..."
+                        rows="4" required
+                        style="width: 100% !important; padding: 10px 12px !important; border: 1px solid #dcdee2 !important; border-radius: 4px !important; font-size: 14px !important; color: #515a6e !important; background-color: #ffffff !important; box-sizing: border-box !important; resize: vertical !important;"></textarea>
+                </div>
+
+                <button type="submit"
+                    style="width: 100% !important; padding: 14px !important; background-color: #f3c21b !important; color: #333333 !important; border: none !important; border-radius: 4px !important; font-size: 16px !important; font-weight: bold !important; cursor: pointer !important; margin-top: 15px !important;">Confirmar
+                    Agendamento</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section class="secao-3">
+        <div class="container">
+
+            <h2> <samp class="cor-h2-secao-3"> O foco é </samp>solucionar o seu problema. </h2>
+
+            <ul class="servicos">
+
+                <li class="card-servico">
+                    <div class="icone">⚡</div>
+                    <h3> <samp class="cor3"> Instalação</samp> Elétrica</h3>
+                    <p>
+                        Instalações elétricas com segurança,
+                        qualidade e profissionalismo.
+                    </p>
+                </li>
+
+                <li class="card-servico">
+                    <div class="icone">🔧</div>
+                    <h3> <samp class="cor3"> Manutenção</samp> Elétrica</h3>
+                    <p>
+                        Manutenção e correção de problemas
+                        elétricos em sua residência ou empresa.
+                    </p>
+                </li>
+
+                <li class="card-servico">
+                    <div class="icone">💡</div>
+                    <h3> <samp class="cor3">Projeto</samp> Elétrico</h3>
+                    <p>
+                        Projetos elétricos planejados para
+                        garantir eficiência e segurança.
+                    </p>
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+    <!--Fim da secao 3-->
+
+    <!--começo da secao4 -->
+    <section class="vantagens">
+        <div class="container">
+            <h2> <samp class="cor-h2-vantagens">Facilidades</samp> para você
+            </h2>
+            <ul class="lista-vantagens">
+                <li>
+                    <div class="icone">💰</div>
+                    <h3>Desconto à vista</h3>
+                    <p>Tenha desconto especial pagando à vista.</p>
+                    <hr>
+                </li>
+
+                <li>
+                    <div class="icone">⏱️</div>
+                    <h3>Orçamento em até 4h</h3>
+                    <p>Solicite seu orçamento e receba o retorno em até 4 horas.</p>
+                    <hr>
+                </li>
+
+                <li>
+                    <div class="icone">🚨</div>
+                    <h3>Atendimento 24h</h3>
+                    <p>Atendimento disponível todos os dias, 24 horas.</p>
+                    <hr>
+                </li>
+
+                <li>
+                    <div class="icone">💳</div>
+                    <h3>Pague em até 5x</h3>
+                    <p>Facilidade para pagar seu serviço em até 5 parcelas.</p>
+                    <hr>
+                </li>
+
+            </ul>
+
+            <a href="http://localhost/eletricista/index.php" style="text-decoration: none;">
+                <button class="botao2">Fazer orçamento agora</button>
+            </a>
+
+        </div>
+    </section>
+    <!--Fim da secao 4-->
+    <!-- Botão de Voltar ao Topo -->
+    <a href="#" class="botao-topo">▲</a>
+
+    <!--começo da secao 5-->
+
+    <section class="secao-5">
+        <div class="container">
+            <h2> <samp class="cor2-h2-secao-5">Minha </samp>Localização</h2>
+        </div>
+
+        <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.393679737358!2d-51.18286082531962!3d-23.265140879004463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb5acd2443bcb7%3A0x4d2f1366ca6be320!2sR.%20Augusto%20Massaretto%20-%20Londrina%2C%20PR%2C%2086081-176!5e0!3m2!1spt-BR!2sbr!4v1789874296225!5m2!1spt-BR!2sbr"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+
+    <!--final da secao 5-->
+
+    <!--começo da secao 6-->
+    <section class="secao6">
+        <div class="container">
+            <div class="cta2 grid-8">
+                <h2> <samp class="cor-h2-secao6">Formas </samp>de Pagamento</h2>
+                <p class="forma-pagamento">Escolha a opção que preferir para concluir suas compra.</p>
+                <ul class="pagamentos">
+                    <li>Cartão de crédito</li>
+                    <li>Boleto</li>
+                    <li>Pix</li>
+                </ul>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--Fim da secao 6-->
+    <!--Fim da secao 6-->
 
-        <!--começo da secao 7-->
-        <section class="secao7">
-            <div class="container">
-                <h2> <samp class="corh2-secao7">Clientes </samp>que confiaram em meus serviços</h2>
-                <div class=" depoimento">
-                    <ul>
-                        <li class="grid-1-3"><img class="depoi"
-                                src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
-                            <h3>Maria</h3>
-                            <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
-                                detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
-                                planejamento. </p>
-                        </li>
-                        <li class="grid-1-3"><img class="depoi"
-                                src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
-                            <h3>Maria</h3>
-                            <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
-                                detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
-                                planejamento. </p>
-                        </li>
-                        <li class="grid-1-3"><img class="depoi"
-                                src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
-                            <h3>Maria</h3>
-                            <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
-                                detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
-                                planejamento. </p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="grid-1-3"><img class="depoi"
-                                src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
-                            <h3>Maria</h3>
-                            <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
-                                detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
-                                planejamento. </p>
+    <!--começo da secao 7-->
+    <section class="secao7">
+        <div class="container">
+            <h2> <samp class="corh2-secao7">Clientes </samp>que confiaram em meus serviços</h2>
+            <div class=" depoimento">
+                <ul>
+                    <li class="grid-1-3"><img class="depoi"
+                            src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
+                        <h3>Maria</h3>
+                        <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
+                            detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
+                            planejamento. </p>
+                    </li>
+                    <li class="grid-1-3"><img class="depoi"
+                            src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
+                        <h3>Maria</h3>
+                        <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
+                            detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
+                            planejamento. </p>
+                    </li>
+                    <li class="grid-1-3"><img class="depoi"
+                            src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
+                        <h3>Maria</h3>
+                        <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
+                            detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
+                            planejamento. </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="grid-1-3"><img class="depoi"
+                            src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
+                        <h3>Maria</h3>
+                        <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
+                            detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
+                            planejamento. </p>
 
-                        </li>
-                        <li class="grid-1-3"><img class="depoi"
-                                src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
-                            <h3>Maria</h3>
-                            <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
-                                detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
-                                planejamento. </p>
+                    </li>
+                    <li class="grid-1-3"><img class="depoi"
+                            src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
+                        <h3>Maria</h3>
+                        <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
+                            detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
+                            planejamento. </p>
 
-                        </li>
-                        <li class="grid-1-3"><img class="depoi"
-                                src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
-                            <h3>Maria</h3>
-                            <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
-                                detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
-                                planejamento. </p>
-                    
-                    </ul>
-        </section>
-        <!--Fim da secao 7-->
+                    </li>
+                    <li class="grid-1-3"><img class="depoi"
+                            src="https://th.bing.com/th/id/R.1021c76ae2e1548db9fd1d0858243153?rik=T0sZ0ZMExW6LTg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-CD4dAi_QXY4%2fUWbIcR9jV9I%2fAAAAAAAAFno%2fjPnziUtiSS0%2fs1600%2fcortes-de-cabelo-para-rosto-quadrado-2.jpg&ehk=kVzM%2b9W3lxWEBfaSg3bMmmwGyEa8aflfvAweuOEThO8%3d&risl=&pid=ImgRaw&r=0">
+                        <h3>Maria</h3>
+                        <p>Uma pessoa extremamente legal, gentil e preocupado em resolver os problemas que foram
+                            detectados em minha residência.O serviso foi feito com excelencia e de acordo com o meu
+                            planejamento. </p>
 
-        <!--inicio da secao 8 -->
-        <section class="secao8">
-            <div class="container2">
-                <img class="foto-secao8" src="https://previprost.com.br/wp-content/uploads/2024/03/90DIAS.png" alt="">
-                <h2> <samp class="cor8">Garantia</samp> de 90 dias</h2>
-                <p class="paragrafo-secao8">Sim, meus serviços tem uma garantia de 90 dias.<br>Ou seja caso de algum
-                    problema nesse prazo, a reparção e correção será de forma gratuita. </p>
-        </section>
-        <!--final da secao 8 -->
+                </ul>
+    </section>
+    <!--Fim da secao 7-->
 
-<!-- começo da secao 9 -->
+    <!--inicio da secao 8 -->
+    <section class="secao8">
+        <div class="container2">
+            <img class="foto-secao8" src="https://previprost.com.br/wp-content/uploads/2024/03/90DIAS.png" alt="">
+            <h2> <samp class="cor8">Garantia</samp> de 90 dias</h2>
+            <p class="paragrafo-secao8">Sim, meus serviços tem uma garantia de 90 dias.<br>Ou seja caso de algum
+                problema nesse prazo, a reparção e correção será de forma gratuita. </p>
+    </section>
+    <!--final da secao 8 -->
 
-<div id="calendar"></div>
+    <!-- começo da secao 9 - RODAPÉ PROFISSIONAL COM IMAGEM DE FUNDO -->
+    <footer class="rodape-profissional">
+        <div class="rodape-container">
+            <!-- Bloco 1: Sobre / Missão -->
+            <div class="rodape-bloco">
+                <h3>Fernando Eletricista</h3>
+                <p>Oferecendo soluções elétricas seguras, ágeis e com total garantia para sua casa ou empresa.
+                    Compromisso com a sua segurança em primeiro lugar.</p>
+            </div>
+            <!-- Bloco 2: Horário de Atendimento -->
+            <div class="rodape-bloco">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><strong>Segunda a Sexta:</strong> 08:00 às 18:00</li>
+                    <li><strong>Sábado:</strong> 08:00 às 12:00</li>
+                    <li><strong>Plantão 24h:</strong> Emergências elétricas</li>
+                </ul>
+            </div>
+            <!-- Bloco 3: Contato Direto -->
+            <div class="rodape-bloco">
+                <h3>Fale Comigo</h3>
+                <p><strong>WhatsApp:</strong> (43) 99999-9999</p>
+                <p><strong>E-mail:</strong> fernandohenrique191195@gmail.com</p>
+            </div>
+        </div>
+        <div class="rodape-direitos">
+            <p>© 2026 Fernando Eletricista. Instalações e Manutenções Residenciais.</p>
+        </div>
+    </footer>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var calendarEl = document.getElementById('calendar');
-
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth',
-            locale: 'pt-br',
-            height: '600',
-            contentHeight: 500
-            
-        });
-        calendar.render();
-
-    });
-
-    // === CÓDIGO DO BOTÃO DE VOLTAR AO TOPO ===
-    let botaoTopo = document.querySelector(".botao-topo");
-
-    window.onscroll = function() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            botaoTopo.style.display = "block";
-        } else {
-            botaoTopo.style.display = "none";
+    <!-- TAG DE ESTILO DIRETO NO HTML PARA NÃO DAR ERRO -->
+    <style>
+        .rodape-profissional {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('img/eletricista.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff !important;
+            padding: 50px 0 20px 0;
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            clear: both;
         }
-    };
-</script>
 
-<!-- final da secao 9 -->
+        .rodape-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .rodape-bloco {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .rodape-bloco h3 {
+            color: #f39c12 !important;
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 700;
+            border-bottom: 2px solid #f39c12;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .rodape-bloco p,
+        .rodape-bloco ul {
+            line-height: 1.6;
+            color: #e5e7eb !important;
+            font-size: 14px;
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        .rodape-bloco ul li {
+            margin-bottom: 8px;
+        }
+
+        .rodape-bloco strong {
+            color: #ffffff !important;
+        }
+
+        .rodape-direitos {
+            max-width: 1100px;
+            margin: 30px auto 0 auto;
+            padding: 20px 20px 0 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 13px;
+            color: #9ca3af !important;
+        }
+    </style>
+
+    <!-- SCRIPT DO BOTÃO VOLTAR AO TOPO -->
+    <script>
+        let botaotopo = document.querySelector(".botao-topo");
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                if (botaotopo) botaotopo.style.display = "block";
+            } else {
+                if (botaotopo) botaotopo.style.display = "none";
+            }
+        };
+    </script>
 
     </div> <!-- Fecha o container geral do site -->
 

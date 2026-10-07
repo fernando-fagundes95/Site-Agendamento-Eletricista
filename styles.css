@@ -656,16 +656,7 @@ body {
 }
 
 
-/* calendario */
-#calendar {
-    max-width: 900px;         /* Limita a largura para ficar centralizado e bonito */
-    margin: 40px auto;        /* Cria um espaço acima e abaixo dele */
-    padding: 20px;            /* Espaço interno para os números não colarem na borda */
-    background-color: white;  /* Mantém o fundo branco que apareceu */
-    border-radius: 10px;      /* Deixa as bordas arredondadas profissionais */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave de fundo */
-    color: #333333 !important; /* Força os textos e dias a ficarem escuros e legíveis */
-}
+
 
 
 /* ========================================================================================
