@@ -458,6 +458,7 @@ body {
     justify-content: center;
 }
 
+
 .depoimento li {
     background: rgba(246, 186, 130, 0.29);
     border-radius: 20px;
@@ -570,7 +571,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    clear: both; /* Evita que elementos de cima entrem no formulário */
+    clear: both;
+    /* Evita que elementos de cima entrem no formulário */
 }
 
 /* O cartão branco com as propriedades isoladas */
@@ -604,7 +606,7 @@ body {
     margin-bottom: 5px !important;
 }
 
-.campo-interno input, 
+.campo-interno input,
 .campo-interno textarea {
     width: 100% !important;
     padding: 10px 12px !important;
@@ -648,11 +650,217 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
     margin-top: 30px;
+
+  
 }
+
+.botao-topo:hover {
+    background-color: #0056b3;
+    transform: scale(1.1) translateY(-2px); /* ADICIONE ESTA LINHA AQUI */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* ADICIONE ESTA LINHA AQUI */
+}
+
 
 /* Efeito ao passar o mouse por cima */
 .botao-topo:hover {
     background-color: #0056b3;
+}
+
+
+
+/* Ajuste profissional para o rodapé existente do seu site */
+.rodape-direitos {
+    display: flex;
+    flex-direction: column; /* Alinha o texto e os botões um embaixo do outro */
+    align-items: center;    /* Centraliza tudo perfeitamente no meio */
+    gap: 12px;              /* Dá um espaço elegante entre o texto e os botões */
+    margin-top: 10px;
+}
+
+/* Deixa o Botão do GitHub moderno e profissional */
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #24292e; /* Cor preta oficial do GitHub */
+    color: #ffffff !important; /* Força o texto a ficar branco */
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #444;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito moderno e suave ao passar o mouse por cima (Hover) unificado */
+.github-btn:hover {
+    background-color: #444d56;
+    transform: scale(1.1) translateY(-2px); /* Cresce levemente e sobe */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Sombra elegante */
+    color: #ffffff !important;
+}
+
+/* Aplica o mesmo efeito de crescimento e sombra ao seu botão do WhatsApp */
+.whatsapp-btn:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* ==========================================================================
+   SEÇÃO 10- RODAPÉ PROFISSIONAL (ARQUIVO SEPARADO)
+   ========================================================================== */
+
+
+/* Estilo do fundo e da estrutura principal do Rodapé */
+.rodape-profissional {
+    background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('img/eletricista.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff !important;
+    padding: 50px 0 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    clear: both;
+}
+
+/* Alinha as 3 colunas uma ao lado da outra */
+.rodape-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Define o tamanho e comportamento de cada bloco de texto */
+.rodape-bloco {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* Estilização dos Títulos (Fernando Eletricista, Atendimento, Fale Comigo) */
+.rodape-bloco h3 {
+    color: #f39c12 !important;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid #f39c12;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Configuração dos textos e listas dentro dos blocos */
+.rodape-bloco p,
+.rodape-bloco ul {
+    line-height: 1.6;
+    color: #e5e7eb !important;
+    font-size: 14px;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-bloco ul li {
+    margin-bottom: 8px;
+}
+
+.rodape-bloco strong {
+    color: #ffffff !important;
+}
+
+/* Seção de direitos autorais e área dos botões (Texto de cópia embaixo) */
+.rodape-direitos {
+    max-width: 1100px;
+    margin: 30px auto 0 auto;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Estilo do texto de copyright cinza */
+.texto-direitos {
+    font-size: 13px;
+    color: #a0aec0 !important;
+    margin: 0;
+}
+
+/* Container para alinhar o botão do GitHub e WhatsApp lado a lado */
+.rodape-botoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+/* Deixa o Botão do GitHub moderno com a cor oficial preta */
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #24292e;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #444;
+    font-family: sans-serif;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito suave ao passar o mouse por cima do GitHub (Hover) */
+.github-btn:hover {
+    background-color: #444d56;
+    transform: scale(1.1) translateY(-2px); /* Sobe levemente e aumenta de tamanho */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Cria uma sombra elegante */
+    color: #ffffff !important;
+}
+
+/* Deixa o Botão do WhatsApp moderno e profissional */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #20ba5a;
+    font-family: sans-serif;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito suave ao passar o mouse por cima do WhatsApp (Hover) */
+.whatsapp-btn:hover {
+    background-color: #20ba5a;
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Garante que em celulares as colunas fiquem uma embaixo da outra centralizadas */
+@media (max-width: 768px) {
+    .rodape-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .rodape-bloco h3 {
+        display: inline-block;
+    }
 }
 
 
@@ -1037,4 +1245,3 @@ body {
         max-width: 290px;
     }
 }
-

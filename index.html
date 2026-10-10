@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site novo</title>
+    <title>Site-Agendamento-Eletricista</title>
 
     <!-- Fontes do Google - CORRIGIDO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -310,118 +310,70 @@
     </section>
     <!--final da secao 8 -->
 
-    <!-- começo da secao 9 - RODAPÉ PROFISSIONAL COM IMAGEM DE FUNDO -->
-    <footer class="rodape-profissional">
-        <div class="rodape-container">
-            <!-- Bloco 1: Sobre / Missão -->
-            <div class="rodape-bloco">
-                <h3>Fernando Eletricista</h3>
-                <p>Oferecendo soluções elétricas seguras, ágeis e com total garantia para sua casa ou empresa.
-                    Compromisso com a sua segurança em primeiro lugar.</p>
-            </div>
-            <!-- Bloco 2: Horário de Atendimento -->
-            <div class="rodape-bloco">
-                <h3>Atendimento</h3>
-                <ul>
-                    <li><strong>Segunda a Sexta:</strong> 08:00 às 18:00</li>
-                    <li><strong>Sábado:</strong> 08:00 às 12:00</li>
-                    <li><strong>Plantão 24h:</strong> Emergências elétricas</li>
-                </ul>
-            </div>
-            <!-- Bloco 3: Contato Direto -->
-            <div class="rodape-bloco">
-                <h3>Fale Comigo</h3>
-                <p><strong>WhatsApp:</strong> (43) 99999-9999</p>
-                <p><strong>E-mail:</strong> fernandohenrique191195@gmail.com</p>
-            </div>
+
+
+    
+  <!-- começo da secao 9 - RODAPÉ PROFISSIONAL COM IMAGEM DE FUNDO -->
+<footer class="rodape-profissional">
+    <div class="rodape-container">
+        <!-- Bloco 1: Sobre / Missão -->
+        <div class="rodape-bloco">
+            <h3>Fernando Eletricista</h3>
+            <p>Oferecendo soluções elétricas seguras, ágeis e com total garantia para sua casa ou empresa.
+                Compromisso com a sua segurança em primeiro lugar.</p>
         </div>
-        <div class="rodape-direitos">
-            <p>© 2026 Fernando Eletricista. Instalações e Manutenções Residenciais.</p>
+        <!-- Bloco 2: Horário de Atendimento -->
+        <div class="rodape-bloco">
+            <h3>Atendimento</h3>
+            <ul>
+                <li><strong>Segunda a Sexta:</strong> 08:00 às 18:00</li>
+                <li><strong>Sábado:</strong> 08:00 às 12:00</li>
+                <li><strong>Plantão 24h:</strong> Emergências elétricas</li>
+            </ul>
         </div>
-    </footer>
+        <!-- Bloco 3: Contato Direto -->
+        <div class="rodape-bloco">
+            <h3>Fale Comigo</h3>
+            <p><strong>WhatsApp:</strong> (43) 99999-9999</p>
+            <p><strong>E-mail:</strong> fernandohenrique191195@gmail.com</p>
+        </div>
+    </div>
 
-    <!-- TAG DE ESTILO DIRETO NO HTML PARA NÃO DAR ERRO -->
-    <style>
-        .rodape-profissional {
-            background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('img/eletricista.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: #ffffff !important;
-            padding: 50px 0 20px 0;
-            font-family: 'Montserrat', sans-serif;
-            width: 100%;
-            clear: both;
+    <!-- Seção de Direitos e Botões adaptada para CSS externo -->
+    <div class="rodape-direitos">
+        <p class="texto-direitos">&copy; 2026 Fernando Eletricista. Instalações e Manutenções Residenciais.</p>
+
+        <!-- CONTAINER DOS BOTÕES LADO A LADO -->
+        <div class="rodape-botoes-container">
+
+            <!-- Botão do GitHub -->
+            <a href="https://github.com" target="_blank" class="github-btn">
+                GitHub
+            </a>
+
+            <!-- Botão do WhatsApp -->
+            <a href="https://wa.me" target="_blank" class="whatsapp-btn">
+                WhatsApp
+            </a>
+
+        </div>
+    </div>
+</footer>
+<!-- fim da secao 9 - RODAPÉ PROFISSIONAL COM IMAGEM DE FUNDO -->
+
+<!-- SCRIPT DO BOTÃO VOLTAR AO TOPO -->
+<script>
+    let botaotopo = document.querySelector(".botao-topo");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            if (botaotopo) botaotopo.style.display = "block";
+        } else {
+            if (botaotopo) botaotopo.style.display = "none";
         }
+    };
+</script>
 
-        .rodape-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .rodape-bloco {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-
-        .rodape-bloco h3 {
-            color: #f39c12 !important;
-            font-size: 18px;
-            margin-bottom: 15px;
-            font-weight: 700;
-            border-bottom: 2px solid #f39c12;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .rodape-bloco p,
-        .rodape-bloco ul {
-            line-height: 1.6;
-            color: #e5e7eb !important;
-            font-size: 14px;
-            margin: 0;
-            list-style: none;
-            padding: 0;
-        }
-
-        .rodape-bloco ul li {
-            margin-bottom: 8px;
-        }
-
-        .rodape-bloco strong {
-            color: #ffffff !important;
-        }
-
-        .rodape-direitos {
-            max-width: 1100px;
-            margin: 30px auto 0 auto;
-            padding: 20px 20px 0 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            font-size: 13px;
-            color: #9ca3af !important;
-        }
-    </style>
-
-    <!-- SCRIPT DO BOTÃO VOLTAR AO TOPO -->
-    <script>
-        let botaotopo = document.querySelector(".botao-topo");
-        window.onscroll = function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                if (botaotopo) botaotopo.style.display = "block";
-            } else {
-                if (botaotopo) botaotopo.style.display = "none";
-            }
-        };
-    </script>
-
-    </div> <!-- Fecha o container geral do site -->
-
+</div> <!-- Fecha o container geral do site -->
 </body>
+
 </html>
