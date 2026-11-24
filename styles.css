@@ -1,0 +1,337 @@
+/* =========================================
+   1. CONFIGURAÇÕES GERAIS E FUNDO DO SITE
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   background-image: url("fundo.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   2. TOPO / CAPA PRINCIPAL
+   ========================================= */
+.topo-site {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    background-image: url("capa.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 110px 0;
+    text-align: center;
+    border-bottom: 5px solid #f59e0b;
+    display: flex;
+    align-items: center;
+}
+
+.topo-site::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.topo-site .container,
+.topo-site .overlay {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.etiqueta {
+    display: inline-block;
+    background-color: rgba(15, 23, 42, 0.85);
+    color: #fbbf24;
+    border: 2px solid #f59e0b;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.topo-site h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.9);
+}
+
+.topo-site .destaque {
+    color: #f59e0b;
+}
+
+.topo-site p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #facc15;
+    max-width: 750px;
+    margin: 0 auto 35px auto;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
+}
+
+.botao {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 16px 36px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.botao:hover {
+    background-color: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   3. SEÇÃO 1 - ALERTA DE SEGURANÇA
+   ========================================= */
+.secao-1 {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.caixa-alerta {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(4px);
+    padding: 40px;
+    border-radius: 12px;
+    border-left: 6px solid #f59e0b;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-alerta h2 {
+    font-size: 28px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.caixa-alerta p {
+    font-size: 18px;
+    color: #1e293b;
+}
+
+/* =========================================
+   4. SEÇÃO DE AGENDAMENTO (FORMULÁRIO)
+   ========================================= */
+.secao-agendamento {
+    padding: 60px 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.caixa-formulario h2 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: #0f172a;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.95);
+    margin-bottom: 10px;
+}
+
+.subtitulo-form {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
+    margin-bottom: 28px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.linha-dupla {
+    display: flex;
+    gap: 15px;
+}
+
+.linha-dupla .campo {
+    flex: 1;
+}
+
+.caixa-formulario label {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
+    margin-bottom: 8px;
+}
+
+.caixa-formulario input,
+.caixa-formulario textarea {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #94a3b8;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #0f172a;
+    background-color: rgba(255, 255, 255, 0.95);
+    transition: border-color 0.3s;
+}
+
+.caixa-formulario input:focus,
+.caixa-formulario textarea:focus {
+    outline: none;
+    border-color: #0284c7;
+    background-color: #ffffff;
+}
+
+.caixa-formulario textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+.btn-confirmar {
+    width: 100%;
+    padding: 18px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 21px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-confirmar:hover {
+    background-color: #0369a1;
+}
+
+/* =========================================
+   5. SEÇÃO 3 - FRASE DE IMPACTO
+   ========================================= */
+.secao-3 {
+    padding: 70px 0;
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+}
+
+.secao-3 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.destaque-azul {
+    color: #38bdf8;
+}
+
+.secao-3 p {
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+/* =========================================
+   6. SEÇÃO 5 - MAPA DE LOCALIZAÇÃO
+   ========================================= */
+.secao-5 {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.secao-5 h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #0f172a;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.95);
+    margin-bottom: 8px;
+}
+
+.subtitulo-mapa {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
+    margin-bottom: 30px;
+}
+
+.moldura-mapa {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffffff;
+}
+
+.moldura-mapa iframe {
+    display: block;
+    width: 100%;
+}
+
+/* =========================================
+   7. RODAPÉ
+   ========================================= */
+.rodape {
+    background-color: #090d16;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+}
+
+/* =========================================
+   8. RESPONSIVO PARA CELULAR
+   ========================================= */
+@media (max-width: 650px) {
+    .topo-site {
+        min-height: 500px;
+        padding: 80px 0;
+    }
+    .topo-site h1 {
+        font-size: 28px;
+    }
+    .topo-site p {
+        font-size: 18px;
+    }
+    .linha-dupla {
+        flex-direction: column;
+        gap: 0;
+    }
+}
