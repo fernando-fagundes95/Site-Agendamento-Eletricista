@@ -22,6 +22,7 @@ include_once("conexao.php");
             <div class="container">
                 <span class="etiqueta">⚡ ATENDIMENTO RÁPIDO E SEGURO</span>
                 <h1>Não perca <span class="destaque">tempo</span> e nem <span class="destaque">dinheiro</span>,<br> contrate quem entende do assunto!</h1>
+                <p>Plantão 24 horas para emergências e serviços elétricos residenciais e comerciais com excelência, garantia e preço justo.</p>
                 <p>Serviços elétricos residenciais e comerciais com excelência, garantia e preço justo.</p>
                 <a href="#agendamento" class="botao">Fazer orçamento agora</a>
             </div>
